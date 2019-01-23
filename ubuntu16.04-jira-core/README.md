@@ -15,13 +15,13 @@ This repository contains the sources for the following [idoall/ubuntu:16.04](htt
 
 ```bash
 # Pull image
-git clone https://github.com/idoall/docker.git
-cd ubuntu16.04-jira/7.12.3
+git clone https://github.com/doccker/docker-1.git 
+cd ubuntu16.04-jira-core/7.12.3
 
 # hack hack hack
 
 # Build
-docker build -t idoall/ubuntu16.04-jira-core:<tag> .
+docker build -t idoall/ubuntu16.04-jira-core:7.12.3 .
 
 # Run rm
 docker run -it --name=idoall_jira_core --rm -p 80:8080 idoall/ubuntu16.04-jira-core:<tag> /bin/bash
